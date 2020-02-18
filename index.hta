@@ -1,0 +1,82 @@
+<hta:application id="oBVC" 
+applicationname="BSOD"  
+version="1.0" 
+maximizebutton="no" 
+minimizebutton="no" 
+sysmenu="no" 
+Caption="no" 
+windowstate="maximize"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hacked By Ro0t-96 | r96 Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/root.css" type="text/css">
+	<script>
+// Created by Atiye Khajepour
+
+
+    var time = new Date ();
+    var h = time.getHours();
+    var m = time.getMinutes();
+    var s = time .getSeconds();
+
+    setInterval(addtime , 1000);
+
+     var string="";
+
+    function addtime(){
+       s++;
+       if (s >= 60) {
+          s = 0;
+          m++; 
+          if (m >= 60){
+             m = 0;
+             h++;
+             if (h >= 24) h = 0;
+          }
+       }
+       
+       if(h<10) string = "0"+h;
+       else string = ""+h;
+       
+       if(m<10) string += ":0"+m;
+       else string += ":"+m;
+       
+       if(s<10) string += ":0"+s;
+       else string += ":"+s;
+  
+       
+       var div = document.getElementById("time");
+       div.innerHTML = string;
+    }
+    
+
+</script>
+</head>
+<body bgcolor="#000" marginwidth="0" marginheight="0"  bottommargin="0" rightmargin="0" leftmargin="0" topmargin="0">
+<font style="text-shadow:0px 1px 5px #000;" face="Iceland">
+
+<div class="overlay"></div>
+<font color="white"><b>Time: </b> <span id="time"></span></font>
+<div id="header">
+    <div id="guardiran-logo">
+        <img draggable="false" src="images/Ro0t-96_v.3.4.png" style="width: 150px;"  alt="Ro0t-96">
+    </div>
+</div>
+<div id="defacer-info-container">
+    <div id="defacer-info">
+        <span style="font-size: 30px;" >Hacked By </span>
+        <span class="defacer-name-container" style="margin-left: 20px;font-size: 30px;" >[</span>
+        <marquee id="defacer-name" style="font-size: 30px;" >Ro0t-96</marquee>
+        <span class="defacer-name-container" style="font-size: 30px;" >]</span>
+    </div>
+</div>
+</font>
+
+<script language="javascript"^>
+function noClick() {if ((event.button==1)||(event.button==2)) {alert('You will not be able to escape.')}}document.onmousedown=noClick
+</script>
+</body>
+</html>
